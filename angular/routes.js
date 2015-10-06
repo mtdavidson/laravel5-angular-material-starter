@@ -76,6 +76,15 @@
 					}
 				}
 			})
+			.state('app.data_table', {
+				url: '/data_table',
+				data: {pageName: 'Data Table'},
+				views: {
+					'main@': {
+						templateUrl: getView('data_table')
+					}
+				}
+			})
 			.state('app.dialogs', {
 				url: '/dialogs',
 				data: {pageName: 'Dialogs'},
